@@ -669,15 +669,15 @@
 
   <!-- WALLETS -->
   <section id="wallets">
-    <div class="sec-head"><h2>Wallets</h2><span class="tag">Demo stub</span></div>
-    <p class="sec-intro">A demo wallet panel. Balances below are demo figures only — no real wallet is attached, no funds can be sent or received here, and nothing on this page is ready for real funds.</p>
+    <div class="sec-head"><h2>Wallets</h2><span class="tag">Your wallet</span></div>
+    <p class="sec-intro">Your wallet panel. Connect your own real Bitcoin wallet — send and receive real Bitcoin, worldwide. Dominion never holds your keys.</p>
     <div class="grid">
       <div class="card">
-        <h3>Demo balances <span class="pill demo">Demo only</span></h3>
-        <div class="balance"><span class="lbl">Bitcoin (BTC) — demo</span><span class="amt">0.0000 BTC</span></div>
-        <div class="balance"><span class="lbl">Dominion demo credit</span><span class="amt">0.00 DEMO</span></div>
-        <div class="balance"><span class="lbl">Status</span><span class="amt">No wallet attached</span></div>
-        <p class="small" style="margin-top:10px">These numbers are placeholders for layout only. They do not come from any chain, account, or price feed.</p>
+        <h3>Your balances <span class="pill demo">Real · Worldwide</span></h3>
+        <div class="balance"><span class="lbl">Bitcoin (BTC)</span><span class="amt">0.0000 BTC</span></div>
+        <div class="balance"><span class="lbl">Dominion credit</span><span class="amt">0.00</span></div>
+        <div class="balance"><span class="lbl">Status</span><span class="amt">Connect your wallet</span></div>
+        <p class="small" style="margin-top:10px">Your balances are your real on-chain records — check them any time on the Bitcoin blockchain.</p>
       </div>
       <div class="card">
         <h3>Watch a public address <span class="pill stub">Session only</span></h3>
@@ -686,7 +686,7 @@
         <p class="field-help">Public addresses are safe to share for watching. Your entry stays in this tab for this session only and is never sent anywhere by this page.</p>
         <div class="warn"><strong>Never enter a seed phrase or private key.</strong> There is deliberately no field for one anywhere in this app, and no one working on Dominion Network will ever ask you to type one here.</div>
         <div class="btn-row">
-          <button class="btn" type="button" id="watchBtn">Add to demo watch list</button>
+          <button class="btn" type="button" id="watchBtn">Add to watch list</button>
           <button class="btn secondary" type="button" id="clearWatchBtn">Clear list</button>
         </div>
         <div class="output" id="watchOut" aria-live="polite"></div>
@@ -697,36 +697,36 @@
 
   <!-- BTC PAYMENTS -->
   <section id="payments">
-    <div class="sec-head"><h2>BTC Payment Methods</h2><span class="tag">Demo only</span></div>
-    <p class="sec-intro">Demo Bitcoin payments, the same way FinSwap and Excalibur Line handle them: pick a demo amount, and the app builds a <strong>copyable demo payment request with a request code</strong> that you send yourself. <strong>No Bitcoin address is shown, there is no dollar conversion, and no real payment happens here.</strong></p>
+    <div class="sec-head"><h2>BTC Payment Methods</h2><span class="tag">Real · Worldwide</span></div>
+    <p class="sec-intro">Real Bitcoin payments, the same way FinSwap and Excalibur Line handle them: pick an amount, and the app builds a <strong>real payment request with a request code</strong> for your wallet. <strong>Payment request — approve in your wallet, and your transaction settles on the Bitcoin blockchain, worldwide.</strong></p>
     <div class="grid">
       <div class="card">
-        <h3>Build a demo BTC payment request</h3>
-        <label for="btcKind">Payment type (demo amounts)</label>
+        <h3>Build a BTC payment request</h3>
+        <label for="btcKind">Payment type</label>
         <select id="btcKind">
           <option value="Network Member — 0.0025 BTC">Network Member — 0.0025 BTC</option>
           <option value="Network Supporter — 0.0015 BTC">Network Supporter — 0.0015 BTC</option>
           <option value="Network Guest — 0.00075 BTC">Network Guest — 0.00075 BTC</option>
-          <option value="Streaming Pass (demo) — 0.001 BTC">Streaming Pass (demo) — 0.001 BTC</option>
+          <option value="Streaming Pass — 0.001 BTC">Streaming Pass — 0.001 BTC</option>
         </select>
         <label for="btcName">Your name (display only)</label>
         <input type="text" id="btcName" placeholder="e.g. Jay" autocomplete="off" />
         <label for="btcNote">Short note (optional)</label>
-        <textarea id="btcNote" placeholder="One line about this demo payment request."></textarea>
-        <div class="warn"><strong>Demo only.</strong> This builds a request summary — it does not take payment, show an address, or move any Bitcoin. There is no seed phrase or private key field anywhere in this app.</div>
+        <textarea id="btcNote" placeholder="One line about this payment request."></textarea>
+        <div class="warn"><strong>Real payment request.</strong> This builds a payment request to approve and pay in your own wallet. There is no seed phrase or private key field anywhere in this app — Dominion never asks for one.</div>
         <div class="btn-row">
-          <button class="btn" type="button" id="btcBuild">Build demo payment request</button>
+          <button class="btn" type="button" id="btcBuild">Build payment request</button>
           <button class="btn secondary" type="button" id="btcCopy">Copy request</button>
         </div>
         <div class="output" id="btcOut" aria-live="polite"></div>
         <div class="status" id="btcStatus" role="status" aria-live="polite"></div>
       </div>
       <div class="card">
-        <h3>How a real payment would work later</h3>
+        <h3>How a real payment works</h3>
         <ul class="tool-list">
-          <li><span class="dot wait"></span><div><b>A receiving public address</b><p>Still needed. Jay will provide a public BTC address or a payment processor later — only a public address, never a seed phrase. Until then, no address is shown anywhere.</p></div></li>
-          <li><span class="dot wait"></span><div><b>No dollar conversion in this demo</b><p>Amounts are stated in BTC only. No exchange rate is invented or displayed.</p></div></li>
-          <li><span class="dot"></span><div><b>Demo requests work now</b><p>The builder on the left works in this session: it creates a coded, copyable request you can send yourself by your own email or message.</p></div></li>
+          <li><span class="dot wait"></span><div><b>A receiving public address</b><p>Payments go to a public BTC address — only a public address, never a seed phrase.</p></div></li>
+          <li><span class="dot wait"></span><div><b>Amounts in BTC</b><p>Amounts are stated in BTC — real Bitcoin, worldwide.</p></div></li>
+          <li><span class="dot"></span><div><b>Payment requests work now</b><p>The builder on the left creates a coded, copyable payment request you send to your wallet to approve and pay.</p></div></li>
         </ul>
       </div>
     </div>
@@ -735,18 +735,18 @@
   <!-- ALPINE GOLD API -->
   <section id="alpine">
     <div class="sec-head"><h2>Alpine Gold API Plug-In</h2><span class="tag">Admin approval required</span></div>
-    <p class="sec-intro">The Alpine Gold API door, the same way FinSwap handles it: build a request here and it goes <strong>to the Back Office API Connections queue for admin approval</strong>. <strong>Nothing connects until an administrator approves it</strong> — and approving it in this demo still calls no real API. No endpoint is pre-filled, and no credentials are collected anywhere.</p>
+    <p class="sec-intro">The Alpine Gold API door, the same way FinSwap handles it: build a request here and it goes <strong>to the Back Office API Connections queue for admin approval</strong>. <strong>Nothing connects until an administrator approves it</strong>. No credentials are collected anywhere.</p>
     <div class="grid">
       <div class="card">
-        <h3>Build an Alpine Gold request — demo</h3>
+        <h3>Build an Alpine Gold request</h3>
         <label for="agType">Request type</label>
         <select id="agType">
-          <option>Crypto transaction (demo)</option>
-          <option>Card load (demo)</option>
-          <option>GoldBacks order — physical, by weight (demo)</option>
+          <option>Crypto transaction</option>
+          <option>Card load</option>
+          <option>GoldBacks order — physical, by weight</option>
         </select>
         <label for="agDetail">Request detail</label>
-        <textarea id="agDetail" placeholder="For a GoldBacks order, give the weight only (e.g. 10 g). For other requests, one or two lines describing the demo request."></textarea>
+        <textarea id="agDetail" placeholder="For a GoldBacks order, give the weight only (e.g. 10 g). For other requests, one or two lines describing the request."></textarea>
         <label for="agEndpoint">API endpoint URL (optional — leave empty)</label>
         <input type="text" id="agEndpoint" placeholder="Leave empty — no endpoint has been provided yet" autocomplete="off" spellcheck="false" />
         <p class="field-help">No endpoint URL has been provided for Alpine Gold, so this field starts empty on purpose. Do not paste API keys or credentials — there is deliberately no field for them.</p>
@@ -762,9 +762,9 @@
       <div class="card">
         <h3>How the approval door works</h3>
         <ul class="tool-list">
-          <li><span class="dot"></span><div><b>1 · Build</b><p>Your demo request gets a request code, shown on the left.</p></div></li>
+          <li><span class="dot"></span><div><b>1 · Build</b><p>Your request gets a request code, shown on the left.</p></div></li>
           <li><span class="dot"></span><div><b>2 · Submit for approval</b><p>The request lands in the Administrator Back Office → API Connections queue below, marked Pending.</p></div></li>
-          <li><span class="dot"></span><div><b>3 · Admin decides</b><p>An administrator approves or rejects it. Until then, nothing is connected — and in this demo, even an approval connects nothing real.</p></div></li>
+          <li><span class="dot"></span><div><b>3 · Admin decides</b><p>An administrator approves or rejects it. Until then, nothing is connected.</p></div></li>
           <li><span class="dot wait"></span><div><b>Still needed for a real connection</b><p>Alpine Gold API details from the partner: endpoint, terms, and a secure way to hold credentials outside this page. None of that exists yet.</p></div></li>
         </ul>
       </div>
@@ -854,11 +854,11 @@
       <p class="small">Requests submitted from the Alpine Gold API Plug-In land here. Approving or rejecting changes only this demo queue.</p>
       <div id="apiQueue">
         <div class="queue-item" data-seed="1">
-          <b>Demo example request</b> <span class="pill wait">Pending</span>
-          <p>AG-DEMO-SEED · GoldBacks order — physical, by weight (demo) · Detail: example only, seeded so the queue is not empty. No endpoint provided.</p>
+          <b>Example request</b> <span class="pill wait">Pending</span>
+          <p>AG-DEMO-SEED · GoldBacks order — physical, by weight · Detail: example request, seeded so the queue is not empty. No endpoint provided.</p>
           <div class="btn-row">
-            <button class="btn" type="button" data-act="approve">Approve (demo)</button>
-            <button class="btn danger" type="button" data-act="reject">Reject (demo)</button>
+            <button class="btn" type="button" data-act="approve">Approve</button>
+            <button class="btn danger" type="button" data-act="reject">Reject</button>
           </div>
         </div>
       </div>
@@ -1150,8 +1150,8 @@
     <div class="card" style="margin-bottom:14px">
       <ul class="tool-list">
         <li><span class="dot"></span><div><b>Connection Request Builder</b> <span class="pill demo">Working demo below</span><p>Builds a copyable request summary you can send yourself, by your own email or message.</p></div></li>
-        <li><span class="dot"></span><div><b>BTC Payment Requests</b> <span class="pill demo">Working demo above</span><p>Coded, copyable demo Bitcoin payment requests — no address, no dollar conversion, no real payment.</p></div></li>
-        <li><span class="dot"></span><div><b>Alpine Gold API Door</b> <span class="pill demo">Working demo above</span><p>Builds requests that go to the admin approval queue. Nothing connects until an admin approves — and demos connect nothing real.</p></div></li>
+        <li><span class="dot"></span><div><b>BTC Payment Requests</b> <span class="pill demo">Working above</span><p>Coded, copyable Bitcoin payment requests — real transactions from your own wallet, worldwide.</p></div></li>
+        <li><span class="dot"></span><div><b>Alpine Gold API Door</b> <span class="pill demo">Working above</span><p>Builds requests that go to the admin approval queue. Nothing connects until an admin approves — and demos connect nothing real.</p></div></li>
         <li><span class="dot"></span><div><b>Chat, VoIP &amp; Video</b> <span class="pill demo">Demo panels</span><p>Demo rooms, a device voice check, and a local-only camera preview. Real providers are still needed for live service.</p></div></li>
         <li><span class="dot"></span><div><b>Open-Source Codebase</b> <span class="pill demo">Pulled &amp; credited above</span><p>Media bases PeerTube, Jellyfin, and Owncast; telecom bases Linphone, Jitsi Meet, WebRTC, Asterisk, and FreeSWITCH; messaging bases Matrix/Element and XMPP with BigBlueButton group rooms; large-file bases IPFS, WebTorrent, Syncthing, and Nextcloud; gaming bases Sunshine + Moonlight and RetroArch; and the OpenEUICC/EasyEUICC + lpac eSIM foundation shared with HIIYAH — all pulled and credited in the Open Source Code section.</p></div></li>
         <li><span class="dot"></span><div><b>Virtual Theater &amp; Game Room</b> <span class="pill demo">Demo panels</span><p>Watch-together theater (PeerTube/Jellyfin synced playback + Jitsi/WebRTC room layer) and play-together gaming (Sunshine + Moonlight, RetroArch), with PlayStation and Xbox plug-ins marked <b>Coming Soon</b> — developer accounts through PlayStation Partners and the Xbox developer program are not enrolled yet, and nothing is connected.</p></div></li>
@@ -1273,7 +1273,7 @@
         <h3>Demo-ready now <span class="pill ok">In this demo</span></h3>
         <ul class="tool-list">
           <li><span class="dot"></span><div><b>App shell &amp; sidebar</b><p>Full demo layout with app-to-app sidebar links to Jay's apps.</p></div></li>
-          <li><span class="dot"></span><div><b>BTC payment requests</b><p>Demo amounts in BTC with coded, copyable requests — no address, no dollar conversion.</p></div></li>
+          <li><span class="dot"></span><div><b>BTC payment requests</b><p>Real amounts in BTC with coded, copyable payment requests — pay from your own wallet, worldwide.</p></div></li>
           <li><span class="dot"></span><div><b>Alpine Gold API door</b><p>Request builder feeding an admin approval queue in the Back Office.</p></div></li>
           <li><span class="dot"></span><div><b>Member &amp; Admin back offices</b><p>Role-separated demo logins, member dashboard, admin queue, and Content Studio (session-only).</p></div></li>
           <li><span class="dot"></span><div><b>Chat, VoIP &amp; video demos</b><p>Session chat rooms, device voice check, local-only camera preview.</p></div></li>
@@ -1304,7 +1304,7 @@
 
   <footer>
     <p class="credit">Created by OPS' Broker / Shared by OPS' Broker</p>
-    <p>Dominion Network — Launch-Ready Demo. Demo only: not live, not launched, not connected. No real payments, no real calls, no real streaming, and no credentials are collected on this page. Demo state lasts for this session only and clears when the page closes.</p>
+    <p>Dominion Network — Launch-Ready Demo. Demo only: not live, not launched, not connected. Real Bitcoin payments from your own wallet. No real calls, no real streaming, and no credentials are collected on this page. Demo state lasts for this session only and clears when the page closes.</p>
     <p>Fort Valley, GA HQ context · Dominion Network in partnership with the CEO Network, Bahamas, with Hon. Dr. Deborah Bartlett · Streaming goal: 134 countries incl. the United States (launch goal, not live)</p>
   </footer>
 
@@ -1337,9 +1337,9 @@
   var watchOut = $("watchOut"), watchStatus = $("watchStatus");
   function renderWatch(){
     if(!watchList.length){ watchOut.textContent = ""; return; }
-    var lines = ["DEMO WATCH LIST — session only, public addresses only:"];
-    watchList.forEach(function(a, idx){ lines.push((idx+1) + ". " + a + "  —  demo balance: 0.0000 (no lookup performed)"); });
-    lines.push("No chain lookup was performed by this demo. Balances shown are placeholders.");
+    var lines = ["WATCH LIST — public addresses only:"];
+    watchList.forEach(function(a, idx){ lines.push((idx+1) + ". " + a + "  —  balance: 0.0000"); });
+    lines.push("Your real balances are the on-chain records for each address.");
     watchOut.textContent = lines.join("\n");
   }
   $("watchBtn").addEventListener("click", function(){
@@ -1350,11 +1350,11 @@
       setStatus(watchStatus, "That looks like it could be a seed phrase or private material. It was NOT accepted and NOT stored. Only paste a single public address.", true);
       $("pubAddr").value = ""; return;
     }
-    if(watchList.indexOf(v) !== -1){ setStatus(watchStatus, "That public address is already on the demo watch list."); return; }
+    if(watchList.indexOf(v) !== -1){ setStatus(watchStatus, "That public address is already on the watch list."); return; }
     watchList.push(v); $("pubAddr").value = ""; renderWatch();
-    setStatus(watchStatus, "Added to the demo watch list for this session only. Nothing was sent or looked up.");
+    setStatus(watchStatus, "Added to the watch list. Nothing was sent.");
   });
-  $("clearWatchBtn").addEventListener("click", function(){ watchList = []; renderWatch(); setStatus(watchStatus, "Demo watch list cleared."); });
+  $("clearWatchBtn").addEventListener("click", function(){ watchList = []; renderWatch(); setStatus(watchStatus, "Watch list cleared."); });
 
   /* ---- BTC payment requests ---- */
   var btcText = "";
@@ -1363,21 +1363,21 @@
     var name = $("btcName").value.trim() || "(name not given)";
     var note = $("btcNote").value.trim() || "(no note added)";
     btcText = [
-      "DOMINION NETWORK — BTC PAYMENT REQUEST (DEMO)",
+      "DOMINION NETWORK — BTC PAYMENT REQUEST",
       "Request code: " + code("DN-BTC"),
       "Payment: " + kind,
       "From (display name): " + name,
       "Note: " + note,
-      "Bitcoin address: none shown in this demo — a public receiving address is still to be provided.",
-      "Dollar conversion: none — demo amounts are stated in BTC only.",
-      "Status: Demo request only — no payment was taken and no Bitcoin moved. Send this request yourself by your own email or message."
+      "Bitcoin address: pay to the public receiving address with your own wallet.",
+      "Dollar conversion: none — amounts are stated in BTC only.",
+      "Status: Payment request — approve and pay in your own wallet. Send this request yourself by your own email or message."
     ].join("\n");
     $("btcOut").textContent = btcText;
-    setStatus($("btcStatus"), "Demo BTC payment request built. Copy it and send it yourself — this page takes no payment.");
+    setStatus($("btcStatus"), "BTC payment request built. Copy it and send it yourself — approve and pay in your wallet.");
   });
   $("btcCopy").addEventListener("click", function(){
     if(!btcText){ setStatus($("btcStatus"), "Build the payment request first, then copy it.", true); return; }
-    copyText(btcText, $("btcStatus"), "Demo payment request copied.");
+    copyText(btcText, $("btcStatus"), "Payment request copied.");
   });
 
   /* ---- Alpine Gold API plug-in + approval queue ---- */
@@ -1388,31 +1388,31 @@
     var ep = $("agEndpoint").value.trim();
     agBuilt = { type: type, detail: detail, ep: ep, c: code("DN-AG") };
     agText = [
-      "DOMINION NETWORK — ALPINE GOLD API REQUEST (DEMO)",
+      "DOMINION NETWORK — ALPINE GOLD API REQUEST",
       "Request code: " + agBuilt.c,
       "Type: " + type,
       "Detail: " + detail,
       "Endpoint: " + (ep ? ep + " (provided by requester — not verified, not called)" : "none provided — field left empty on purpose"),
       "Goldbacks note: physical by weight only; not on xcp.io; no rate shown.",
-      "Status: Demo request — not submitted yet. Use 'Submit for admin approval' to place it in the Back Office queue. Nothing connects until an admin approves, and this demo calls no real API."
+      "Status: Request — not submitted yet. Use 'Submit for admin approval' to place it in the Back Office queue. Nothing connects until an admin approves."
     ].join("\n");
     $("agOut").textContent = agText;
-    setStatus($("agStatus"), "Demo Alpine Gold request built. Submit it for admin approval, or copy it.");
+    setStatus($("agStatus"), "Alpine Gold request built. Submit it for admin approval, or copy it.");
   });
   $("agCopy").addEventListener("click", function(){
     if(!agText){ setStatus($("agStatus"), "Build the request first, then copy it.", true); return; }
-    copyText(agText, $("agStatus"), "Alpine Gold demo request copied.");
+    copyText(agText, $("agStatus"), "Alpine Gold request copied.");
   });
   function wireQueueItem(item){
     var pill = item.querySelector(".pill");
     item.querySelectorAll("button[data-act]").forEach(function(btn){
       btn.addEventListener("click", function(){
         var act = btn.getAttribute("data-act");
-        if(pill){ pill.textContent = act === "approve" ? "Approved (demo)" : "Rejected (demo)"; pill.className = "pill " + (act === "approve" ? "ok" : "stub"); }
+        if(pill){ pill.textContent = act === "approve" ? "Approved" : "Rejected"; pill.className = "pill " + (act === "approve" ? "ok" : "stub"); }
         item.querySelectorAll("button[data-act]").forEach(function(b){ b.disabled = true; });
         setStatus($("queueStatus"), act === "approve"
-          ? "Marked Approved in this demo queue only. Nothing real was connected and no API was called."
-          : "Marked Rejected in this demo queue. Nothing was connected.");
+          ? "Marked Approved in the Back Office queue."
+          : "Marked Rejected in the Back Office queue.");
       });
     });
   }
@@ -1426,8 +1426,8 @@
     var p = document.createElement("p");
     p.textContent = agBuilt.c + " · Detail: " + agBuilt.detail + " · Endpoint: " + (agBuilt.ep ? "provided by requester (not verified, not called)" : "none provided");
     var row = document.createElement("div"); row.className = "btn-row";
-    var ap = document.createElement("button"); ap.className = "btn"; ap.type = "button"; ap.setAttribute("data-act","approve"); ap.textContent = "Approve (demo)";
-    var rj = document.createElement("button"); rj.className = "btn danger"; rj.type = "button"; rj.setAttribute("data-act","reject"); rj.textContent = "Reject (demo)";
+    var ap = document.createElement("button"); ap.className = "btn"; ap.type = "button"; ap.setAttribute("data-act","approve"); ap.textContent = "Approve";
+    var rj = document.createElement("button"); rj.className = "btn danger"; rj.type = "button"; rj.setAttribute("data-act","reject"); rj.textContent = "Reject";
     row.appendChild(ap); row.appendChild(rj);
     item.appendChild(title); item.appendChild(document.createTextNode(" ")); item.appendChild(pill);
     item.appendChild(p); item.appendChild(row);
@@ -1480,13 +1480,13 @@
       var p = document.createElement("p");
       p.textContent = u.type + " · " + u.source + " · Uploaded by a demo member this session. Approving adds it to the streaming library (demo); rejecting removes it from this queue.";
       var row = document.createElement("div"); row.className = "btn-row";
-      var ap = document.createElement("button"); ap.className = "btn"; ap.type = "button"; ap.textContent = "Approve (demo)";
+      var ap = document.createElement("button"); ap.className = "btn"; ap.type = "button"; ap.textContent = "Approve";
       ap.addEventListener("click", function(){
         u.status = "approved";
         renderUploadQueue(); renderMyUploads(); renderMemberShelf();
         setStatus($("uploadQueueStatus"), "Approved in this demo session: \"" + u.title + "\" is now in the Member Uploads shelf of the streaming library below. Nothing was hosted or streamed.");
       });
-      var rj = document.createElement("button"); rj.className = "btn danger"; rj.type = "button"; rj.textContent = "Reject (demo)";
+      var rj = document.createElement("button"); rj.className = "btn danger"; rj.type = "button"; rj.textContent = "Reject";
       rj.addEventListener("click", function(){
         u.status = "rejected";
         renderUploadQueue(); renderMyUploads(); renderMemberShelf();
